@@ -1,0 +1,98 @@
+.student-modal {
+  width: min(620px, 100%);
+}
+
+.student-modal .alert-error {
+  margin: 0;
+}
+
+.optional-label {
+  color: #929daf;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.student-dialog-copy {
+  margin: 0;
+  color: #7e8b9d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.student-row-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.student-filter-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 21px 12px;
+}
+
+.student-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7b879a;
+  font-size: 11px;
+}
+
+.student-filter select {
+  max-width: 220px;
+  border: 1px solid #e1e7ee;
+  border-radius: 8px;
+  padding: 7px 9px;
+  color: #40506a;
+  background: #fff;
+  font: inherit;
+}
+
+.student-profile-fields {
+  display: grid;
+  flex: 1 1 220px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 16px;
+  align-self: center;
+  min-width: 0;
+}
+
+.student-profile-fields > div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.student-profile-fields small {
+  color: #929daf;
+  font-size: 9px;
+}
+
+.student-profile-fields span {
+  overflow-wrap: anywhere;
+  color: #40506a;
+  font-size: 11px;
+}
+
+.student-save-spinner {
+  animation: student-spin 1s linear infinite;
+}
+
+@keyframes student-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 560px) {
+  .student-filter-row {
+    justify-content: flex-start;
+    padding-inline: 14px;
+  }
+
+  .student-profile-fields {
+    grid-template-columns: 1fr;
+    flex-basis: 100%;
+  }
+}
